@@ -78,10 +78,10 @@ a {
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>อีเมล์</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <label for="psw"><b>เบร์โทรศัพท์</b></label>
+    <label for="psw"><b>เบอร์โทรศัพท์</b></label>
     <input type="text" placeholder="Enter Tel" name="tel" id="tel" required>
 
 
@@ -91,7 +91,7 @@ a {
     <button type="submit" class="registerbtn">Register</button>
   </div>
            <!-- ACTION BUTTONS -->
-            <div class="buttonGroup">
+            <div class="hidden">
                 <div class="buttonRow">
                     <button id="openWindowButton">Open External Window</button>
                     <button id="closeWindowButton">Close LIFF App</button>
@@ -153,7 +153,7 @@ a {
                 </table>
             </div>
             <!-- LIFF DATA -->
-            <div id="liffData">
+            <div id="liffData" class="hidden">
                 <h2 id="liffDataHeader" class="textLeft">LIFF Data</h2>
                 <table>
                     <tr>
@@ -183,11 +183,11 @@ a {
                 </table>
             </div>
             <!-- LOGIN LOGOUT BUTTONS -->
-            <div class="buttonGroup">
+            <div class="hidden">
                 <button id="liffLoginButton">Log in</button>
                 <button id="liffLogoutButton">Log out</button>
             </div>
-            <div id="statusMessage">
+            <div id="statusMessage" class="hidden">
                 <div id="isInClientMessage"></div>
                 <div id="apiReferenceMessage">
                     <p>Available LIFF methods vary depending on the browser you use to open the LIFF app.</p>
