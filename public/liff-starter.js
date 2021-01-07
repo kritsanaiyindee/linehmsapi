@@ -170,6 +170,7 @@ function registerButtonHandlers() {
         liff.getProfile().then(function(profile) {
             document.getElementById('userIdProfileField').textContent = profile.userId;
             document.getElementById('displayNameField').textContent = profile.displayName;
+            alert(liff.getDecodedIDToken().email);
             document.getElementById('email').textContent = liff.getDecodedIDToken().email;
             const profilePictureDiv = document.getElementById('profilePictureDiv');
             if (profilePictureDiv.firstElementChild) {
