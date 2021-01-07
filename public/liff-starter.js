@@ -171,7 +171,7 @@ function registerButtonHandlers() {
             document.getElementById('userIdProfileField').textContent = profile.userId;
             document.getElementById('displayNameField').textContent = profile.displayName;
             //alert(liff.getDecodedIDToken().email);
-            document.getElementById('email').innerHTML= liff.getDecodedIDToken().email;
+            document.getElementById('emailx').textContent = liff.getDecodedIDToken().email;
             const profilePictureDiv = document.getElementById('profilePictureDiv');
             if (profilePictureDiv.firstElementChild) {
                 profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
