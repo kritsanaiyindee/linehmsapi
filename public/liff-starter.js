@@ -84,7 +84,8 @@ function displayLiffData() {
     document.getElementById('isInClient').textContent = liff.isInClient();
     document.getElementById('isLoggedIn').textContent = liff.isLoggedIn();
     document.getElementById('deviceOS').textContent = liff.getOS();
-    document.getElementById('deviceOS').textContent = liff.getEmail();
+    document.getElementById('email').textContent = liff.getEmail();
+    
 }
 
 /**
